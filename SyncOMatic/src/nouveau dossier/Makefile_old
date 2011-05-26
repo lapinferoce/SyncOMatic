@@ -1,0 +1,15 @@
+.SUFFIXES: .erl .beam
+
+.erl.beam:
+	erlc -W $<
+
+ERL = erl -boot start_clean
+MODS = client-test.erl  crawl.erl  md5.erl  serialize.erl
+
+all: compile
+	${ERL} -pa '.' -s client-test.erl start
+
+compile: ${MODS:%=%.beam}
+
+clean:
+	rm -rf *.beam erl_crash.dump
