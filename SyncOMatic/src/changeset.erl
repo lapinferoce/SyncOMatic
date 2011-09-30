@@ -34,7 +34,7 @@ isIn({},_)->
 isIn(_,[])->
     false.
 
-						%check if element has the same car and cdr
+%check if element has the same car and cdr
 isSameIn({P,M},[H|T])->
     {EH,EM} = H,
     case (P==EH) and (M==EM) of
@@ -48,7 +48,7 @@ isSameIn({},_)->
 
 isSameIn(_,[])->
     false.
-						 %check if element has the same car and cdr
+%check if element has changed car and cdr
 hasChangeIn({P,M},[H|T])->
     {EH,EM} = H,
     case (P==EH) and (not (M==EM)) of
