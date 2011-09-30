@@ -1,1 +1,17 @@
-a small synchro file 
+SyncOMatic is a simple file synchronization tool written in erlang. 
+
+Actual release is far from been optimize since I wrote it to learn erlang. In particullar some basic function have been re-wrote from Erlang default lib !
+
+I Server deployement
+
+
+I.1 Server configuration
+
+I.2 Server start/stop
+
+II Client deployement
+
+
+I.1 Client configuration
+
+I.2 Client start/stop
